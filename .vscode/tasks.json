@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "npm: dev",
+			"type": "npm",
+			"script": "dev",
+			"isBackground": true,
+			"detail": "nodemon index",
+			"problemMatcher": [
+                {
+					"owner": "npm",
+					"background": {
+						"activeOnStart": true,
+						"beginsPattern": ".*",
+						"endsPattern": "Finished.+"
+					},
+					"pattern": {
+						"regexp": "",
+					}
+				}
+			],
+		}
+	]
+}
